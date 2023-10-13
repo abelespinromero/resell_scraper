@@ -13,7 +13,7 @@ class VintedSpider(scrapy.Spider):
  
     def __init__(self, *args, **kwargs):
         super(VintedSpider, self).__init__(*args, **kwargs)
-        self.csv_file = open('vinted.csv', 'w', newline='', encoding='utf-8')
+        self.csv_file = open('resell_spider/data/vinted.csv', 'w', newline='', encoding='utf-8')
         self.csv_writer = csv.writer(self.csv_file)
         self.csv_writer.writerow(['keyword', 'title', 'price', 'image_url', 'item_url'])  # Encabezados
         self.page = 1  # Inicializa la página en 1
