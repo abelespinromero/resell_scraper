@@ -56,7 +56,7 @@ class ProductImageSearchSpider(scrapy.Spider):
             # Aceptar cookies haciendo clic en el botón "Aceptar todo"
             aceptar_todo_button = driver.find_element(By.XPATH, '//button[text()="Aceptar todo"]')
             aceptar_todo_button.click()
-            asdasda
+
         except Exception as e:
             self.logger.error(f"Error al aceptar las cookies: {str(e)}")
 
